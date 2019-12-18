@@ -14,9 +14,9 @@ import Icon from 'react-native-ico-transport-logos';
 render() {
     return (
         <>
-          <Icon name="004-ford" />
-          <Icon name="005-mini" height="40" width="40" />
-          <Icon name="006-porsche" color="red" />
+          <Icon name="ford" />
+          <Icon name="mini" height="40" width="40" />
+          <Icon name="porsche" color="red" />
         </>
     );
 }
@@ -61,7 +61,7 @@ Returns a SvgXml icon by name and group.
 
  name | optional | default value | description | examples
 ------|----------|---------------|-------------|---------
-name | no |  | name of file | "004-ford"
+name | no |  | name of file | "ford"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
