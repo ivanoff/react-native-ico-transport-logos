@@ -2,7 +2,7 @@
 
 ### react-native-ico-transport-logos
 
-369 Vector Icons for React Native
+80 Vector Icons for React Native
 
 <img src="./static/ford.png" alt="ford" width="150" height="150"> <img src="./static/mini.png" alt="mini" width="150" height="150"> <img src="./static/porsche.png" alt="porsche" width="150" height="150">
 
@@ -23,6 +23,10 @@ render() {
           <Icon name="ford" />
           <Icon name="mini" height="40" width="40" />
           <Icon name="porsche" color="red" />
+          <Icon name="mini" badge="10" />
+          <Icon name="mini" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
+          <Icon name="ford" background="circle" />
+          <Icon name="ford" background={{ type: "button", color: 'green' }} />
         </>
     );
 }
@@ -57,7 +61,7 @@ cd ios && pod install && cd ..
 
 ## API
 
-### <Icon name [color width height ...rest] />
+### <Icon name [color width height background badge ...rest] />
 
 Returns a SvgXml icon by name and group.
 
@@ -67,6 +71,10 @@ name | no |  | name of icon | "ford"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
+background | no | | background type | "circle"
+background | no | | background object | {type: "circle", color: 'yellow'}
+badge | no | | badge string | "10"
+badge | no | | badge object | {value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}
 ...rest | no | | other props | style={{backgroundColor: "#00f"}}
 
 ## Icons Made by
