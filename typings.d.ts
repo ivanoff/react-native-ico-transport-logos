@@ -1,5 +1,6 @@
 declare module 'react-native-ico-transport-logos' {
     import { ReactNode } from 'react';
+    import { SvgProps, AdditionalProps } from 'react-native-svg';
 
     type iconNames = 'kia' |
       'smart' |
@@ -113,7 +114,7 @@ declare module 'react-native-ico-transport-logos' {
       badge?: number | string | badgeTypeObj;
     }
 
-    const Icon: (props: IconProps) => ReactNode;
+    const Icon: (props: IconProps & SvgProps & AdditionalProps) => ReactNode;
 
     export { iconNames };
     export default Icon;
